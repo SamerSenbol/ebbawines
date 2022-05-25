@@ -1,0 +1,44 @@
+.icons {
+    background-color: aqua;
+    max-width: 450px;
+	height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span, i {
+    padding-left: 5px;
+	color: green;
+}
+/*star-rating Start*/
+.star-rating{
+	font-size: 0;
+}
+.star-rating__wrap{
+	display: inline-block;
+	font-size: 1rem;
+}
+.star-rating__wrap:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.star-rating__ico{
+	float: left;
+	padding-left: 2px;
+	cursor: pointer;
+	color: green;
+}
+.star-rating__ico:last-child{
+	padding-left: 0;
+}
+.star-rating__input{
+	display: none;
+}
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before
+{
+	content: "\f005";
+}
+/*star-rating End*/
