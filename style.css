@@ -24,7 +24,7 @@ span, i {
 	clear: both;
 }
 .star-rating__ico{
-	float: left;
+	float: right;
 	padding-left: 2px;
 	cursor: pointer;
 	color: green;
